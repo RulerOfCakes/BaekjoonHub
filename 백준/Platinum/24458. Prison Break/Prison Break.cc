@@ -69,11 +69,9 @@ int main()
         if (i)
         {
             ost.insert({v[i - 1], v[i]});
-            ost.insert({v[i], v[i - 1]});
         }
     }
     ost.insert({v.back(), v[0]});
-    ost.insert({v[0], v.back()});
     cin >> L;
     set<pi> cst;
     for (int i = 0; i < L; i++)
