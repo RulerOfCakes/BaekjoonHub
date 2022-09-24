@@ -32,7 +32,6 @@ void uni(int x, int y)
         sts[px].clear();
     }
 }
-bool chk[101010];
 
 int main()
 {
@@ -57,16 +56,7 @@ int main()
     {
         int a, b;
         cin >> a >> b;
-        if (a == 1)
-            chk[b] = 1;
         qry.push({a, b});
-    }
-    for (int i = 2; i <= N; i++)
-    {
-        if (!chk[i])
-        {
-            uni(i, parent[i]);
-        }
     }
     stack<int> ans;
     while (qry.size())
